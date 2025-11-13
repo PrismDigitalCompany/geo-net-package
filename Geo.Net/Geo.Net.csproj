@@ -15,6 +15,8 @@
     <Copyright>MIT License</Copyright>
     <PackageReadmeFile>GeoNet Readme.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/PrismDigitalCompany/geo-net-package</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>geography;geo;location;country;currency;dotnet;dotnet6;singleton;library;api</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
