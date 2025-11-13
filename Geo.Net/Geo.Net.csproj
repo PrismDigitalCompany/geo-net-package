@@ -12,11 +12,13 @@
     <Company>Prism Digital Company Ltd</Company>
     <Description>Geo.Net is a modern, lightweight, and easy-to-use .NET library designed to provide geographical and location-based utilities for .NET applications. Whether you are building mapping applications, location services, or data-driven tools that rely on country, city, or regional information, Geo.Net simplifies your workflow with a clean, intuitive API.</Description>
     <PackageIcon>GeoNet Nuget.png</PackageIcon>
-    <Copyright>MIT License</Copyright>
+    <Copyright></Copyright>
     <PackageReadmeFile>GeoNet Readme.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/PrismDigitalCompany/geo-net-package</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>geography;geo;location;country;currency;dotnet;dotnet6;singleton;library;api</PackageTags>
+    <PackageLicenseFile>MIT License.txt</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
@@ -40,6 +42,10 @@
       <PackagePath>\</PackagePath>
     </None>
     <None Include="..\..\..\..\..\OneDrive\Desktop\GeoNet Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\..\..\..\OneDrive\Desktop\MIT License.txt">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
