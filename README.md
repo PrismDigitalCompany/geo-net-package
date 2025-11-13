@@ -49,15 +49,23 @@ SOFTWARE.
 
 Install via **NuGet**:
 
-```bash
+# bash
 dotnet add package Geo.Net
 
+---
+
+## Getting Started
 ```csharp
 using Geo.Net;
 
-// Access singleton instance
-var countries = GeoService.GetCountries();
+// Get the list of all the countries with their currencies
+var countries = GeoNetService.GetCountries();
 foreach (var country in countries)
 {
     Console.WriteLine($"{country.Name} - {country.Currency}");
 }
+
+// Get the country by the code
+string country = GeoNetService.GetCountryByCode("JP");
+Console.WriteLine(country);
+
