@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>GeoNet Nuget.ico</ApplicationIcon>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>GeoNet</Title>
+    <Authors>Kenneth Otoro</Authors>
+    <Company>Prism Digital Company Ltd</Company>
+    <Description>Geo.Net is a modern, lightweight, and easy-to-use .NET library designed to provide geographical and location-based utilities for .NET applications. Whether you are building mapping applications, location services, or data-driven tools that rely on country, city, or regional information, Geo.Net simplifies your workflow with a clean, intuitive API.</Description>
+    <PackageIcon>GeoNet Nuget.png</PackageIcon>
+    <Copyright>MIT License</Copyright>
+    <PackageReadmeFile>GeoNet Readme.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/PrismDigitalCompany/geo-net-package</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="GeoNet Nuget.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Resources\countries.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+	<EmbeddedResource Include="Resources\countries.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Downloads\GeoNet Nuget.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\..\..\..\OneDrive\Desktop\GeoNet Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
