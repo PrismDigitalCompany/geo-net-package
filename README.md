@@ -51,3 +51,13 @@ Install via **NuGet**:
 
 ```bash
 dotnet add package Geo.Net
+
+```csharp
+using Geo.Net;
+
+// Access singleton instance
+var countries = GeoService.GetCountries();
+foreach (var country in countries)
+{
+    Console.WriteLine($"{country.Name} - {country.Currency}");
+}
